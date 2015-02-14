@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Simple System Monitor</title>
+		<!--Open Sans Font <3-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'/>
+		
+		<!--Bootstrap & Own Styling-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/c3.css"/>
+		<link rel="stylesheet" type="text/css" href="css/simpleMonitor.css"/>
+		
+		<!--Favicon-->
+		<link rel="shortcut icon" href="img/new_favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="img/new_favicon.ico" type="image/x-icon"/>
+	</head>
+	
+	<body>
+		<h1> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Simple System Monitor</h1>
+
+		<!--Felix Desktop-->
+		<div class="row systemContainer">
+			<div class="col-md-12">
+				<div class="systemHeader">
+					<h4>Felix Desktop</h4>
+
+					<div class="row">
+						<div class="col-md-4">
+							<h4><span class="label label-info">Type:</span> Windows_NT</h4>
+						</div>
+						<div class="col-md-4">
+							<h4><span class="label label-info">Platform:</span> win32</h4>
+						</div>
+						<div class="col-md-4">
+							<h4><span class="label label-info">Uptime:</span> 273929.2883294 Seconds</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="graphContainer">
+					<h4>Memory</h4>
+					<div id="graph1"></div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="graphContainer">
+					<h4>CPU</h4>
+					<div id="graph2"></div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/c3.js"></script>
+	<script type="text/javascript" src="js/simpleMonitor.js"></script>
+</html>	
